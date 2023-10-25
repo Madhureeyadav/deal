@@ -1,8 +1,10 @@
 import {AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterCircle} from "react-icons/ai"
 import Link from "next/link"
 
-
 const Contact = () => {
+
+
+
   return (
     <div>
        

@@ -8,27 +8,60 @@ const property = () => {
       <div className="border-2  w-full h-full">
         <Image src="/img/gal-2.jpeg "  width={500} height={100} className="w-full h-96"></Image>
       </div>
-      <div className='border-2 w-full text-center bg-slate-800'>
+      <div className='border-2 w-full text-center '>
       <div className=' font-extrabold p-3'>
       Apartment
       </div>
       <div  className='border-2 inline-block m-2'>
-      <p className=''>Requiredment of customer</p>
-      <p className=' '>This given the apartment your sutitable of the 1BH ,2BH requirement according of the aprtment avaiable .</p>
+      <p className='font-bold p-2'>Requiredment of customer</p>
+      <p className='p-2 '>This given the apartment your sutitable of the 1BH ,2BH requirement according of the aprtment avaiable .</p>
       <p>there are provide the safe its recommaned the  hospital, college, playground ,school, </p>
       
       </div>
-      <div className="border-2  w-full p-2 bg-yellow-100 ">Differnt type of apartment
-<div className="border-2 w-full flex h-56 p-2 bg-purple-300 ">
-        <div className="border-2 flex flex-col w-full">1BH</div>
-        <div className="border-2  flex flex-col w-full">2BH</div>
-        <div className="border-2   flex flex-col w-full">#Bh</div>
+      <div className="border-2  w-full p-2 bg-yellow-100  ">
+        <div className="font-bold">Differnt type of apartment</div>
+<div className="border-2 w-full flex  p-2 h-56 bg-purple-300 gap-1">
+        <div className="border-2   w-full"> <Image src="/img/gal-2.jpeg "  width={500} height={100} className="w-full h-48 rounded-xl h-full "></Image><div className=' absolute z-10
+        '>1BH</div></div>
+        <div className="border-2 rounded-xl  w-full"> <Image src="/img/gal-2.jpeg "  width={500} height={100} className="w-full h-full "></Image><div className=' absolute z-10
+        '>1BH</div></div>
+        <div className="border-2 rounded-xl w-full"> <Image src="/img/gal-2.jpeg "  width={500} height={100} className="w-full h-full "></Image><div className=' absolute z-10
+        '>1BH</div></div>
+        
         </div>
-        <div className="border-2 h-48 w-full flex p-2 bg-purple-900">
-        <div className="border-2 flex flex-col w-full">family package</div>
-        <div className="border-2  flex flex-col w-full">family</div>
-        <div className="border-2   flex flex-col w-full">family</div> 
-        <div className="border-2   flex flex-col w-full">family</div>
+        <div className="border-2 h-48 w-full flex  gap-3 p-2 bg-purple-900">
+        <div className="border-2 flex flex-col w-full">
+          <Image src="/img/gal-2.jpeg "  
+          width={500} 
+          height={100} 
+          alt="without faniture"
+          className="w-full  h-full ">
+            </Image>
+            </div>
+        <div className="border-2  flex flex-col w-full">
+        <Image src="/img/gal-2.jpeg "  
+          width={500} 
+          height={100} 
+          alt="living room faniture"
+          className="w-full  h-full ">
+            </Image>
+        </div>
+        <div className="border-2   flex flex-col w-full">
+        <Image src="/img/gal-2.jpeg "  
+          width={500} 
+          height={100} 
+          alt="single room fantiture"
+          className="w-full  h-full ">
+            </Image>
+            </div> 
+        <div className="border-2   flex flex-col w-full">
+        <Image src="/img/gal-2.jpeg "  
+          width={500} 
+          height={100} 
+          alt="full faniture"
+          className="w-full  h-full ">
+            </Image>
+        </div>
 
         </div>
 

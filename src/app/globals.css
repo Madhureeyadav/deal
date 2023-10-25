@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.back{
+    background-image: url(/img/a1.jpeg);
+    background-repeat: no-repeat;
+    
+    
+}

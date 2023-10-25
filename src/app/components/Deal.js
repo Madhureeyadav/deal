@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import {AiOutlineVerticalLeft } from "react-icons/ai"
 
   async function handleSubmit(event){
       event.preventDefualt();
@@ -28,35 +28,41 @@ import Image from 'next/image'
 const Deal = () => {
   return (
     <main className="overflow:hidden">
-     <div className="flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto">
-      <div className="flex-1 pt-20  padding-x">
-        <Image src="/img/plot.jpg" width={500} height={500} className="w-full ">
+     <div className="flex xl:flex-row flex-col gap-5  max-w-[1440px] mx-auto">
+      <div className="flex  padding-x">
+        <Image src="/img/gal-11.jpeg" width={500} height={500} className="w-full h-72 " >
           
         </Image>
+        
        </div>
-       
+      
      </div>
      <div>
      <div className="text-center font-bold text-2xl m-5 uppercase ">Property 
      <div className="w-full border-2 h-72 flex pt-10 ">
       <div className="w-full border-2 flex flex-col">
-        <Image src="/img/plot.jpg" 
+        <Image src="/img/f1.jpg" 
         width={500} 
         height={500} 
         className="w-full h-full ">
         </Image></div>
-      <div className="w-full border-2 flex flex-col"><Image src="/img/plot.jpg" 
+      <div className="w-full border-2 flex flex-col"><Image src="/img/f3.jpg" 
         width={500} 
         height={500} 
         className="w-full h-full ">
         </Image></div>
-      <div className="w-full border-2 flex flex-col"><Image src="/img/plot.jpg" 
+      <div className="w-full border-2 flex flex-col"><Image src="/img/a1.jpeg" 
         width={500} 
         height={500} 
         className="w-full h-full ">
         </Image></div>
-      <div className="w-full border-2 flex flex-col"><div className="w-full border-2  flex-col "></div>
-      <div className="w-full border-2  flex-col "></div></div>
+      <div className="w-full border-2 flex flex-col">
+      <Image src="/img/gal-9.jpeg" 
+        width={500} 
+        height={500} 
+        className="w-full h-full ">
+        </Image>
+      </div>
       </div> 
       </div> 
      </div>
@@ -151,68 +157,80 @@ const Deal = () => {
       <div className=" border-2 text-center h-56 px-48 py-10 flex"> 
         <div className=" flex flex-col border-2 w-full ">
           
-        <Image src="/img/gal-2.jpeg" width={500} height={500} className="w-full rounded-6xl h-full hover:bg-primary "></Image>
+        <Image src="/img/gal-12.jpeg" 
+        width={500} 
+        height={500}
+         className="w-full  h-full hover:bg-primary ">
+
+         </Image>
         </div>
-         <div className="flex flex-col border-2 w-full  "><Image src="/img/gal-2.jpeg" width={500} height={500} className="w-full rounded-6xl h-full "></Image></div>
+         <div className="flex flex-col border-2 w-full  ">
+          <Image src="/img/farmhouse.jpg" width={500} 
+          height={500} 
+          className="w-full  h-full ">
+            </Image></div>
         </div></div>
    
 
      
         <div className="flex flex-col" > <div className="text-center font-bold  p-2">Agent Meet</div> </div>
-      <div className="w-full border-2 h-36 flex gap-10  p-10 ">
-      <div className="w-full border-2 flex flex-col"></div>
-      <div className="w-full border-2 flex flex-col"></div>
-      <div className="w-full border-2 flex flex-col"></div>
-      <div className="w-full border-2 flex flex-col"></div>
+      <div className="w-full border-2 h-36 flex gap-5  p-8 ">
+      <div className="w-full border-2 flex rounded-2xl ">
+        <div>
+        <Image src="/img/realtor-1.jpeg" 
+        width={500} 
+        height={500} 
+        className="w-full h-full rounded-2xl  ">
+        </Image></div>
+       <div className="w-full text-blue-900  text-center inline-flex"> 
+       <AiOutlineVerticalLeft size={20} className="" />
+     Any query call me
+     
+     </div>
+    </div>
+      <div className="w-full border-2 flex ">
+      <div>
+        <Image src="/img/realtor-1.jpeg" 
+        width={500} 
+        height={500} 
+        className="w-full h-full rounded-2xl  ">
+        </Image></div>
+       <div className="w-full text-blue-900  text-center inline-flex"> 
+       <AiOutlineVerticalLeft size={20} className="" />
+     Any query call me
+     
+     </div>
+      </div>
+      <div className="w-full border-2 flex ">
+      <div>
+        <Image src="/img/realtor-1.jpeg" 
+        width={500} 
+        height={500} 
+        className="w-full h-full rounded-2xl  ">
+        </Image></div>
+       <div className="w-full text-blue-900  text-center inline-flex"> 
+       <AiOutlineVerticalLeft size={20} className="" />
+     Any query call me
+     
+     </div>
+      </div>
+      <div className="w-full border-2 flex ">
+      <div>
+        <Image src="/img/realtor-1.jpeg" 
+        width={500} 
+        height={500} 
+        className="w-full h-full rounded-2xl  ">
+        </Image></div>
+       <div className="w-full text-blue-900  text-center inline-flex"> 
+       <AiOutlineVerticalLeft size={20} className="" />
+     Any query call me
+     
+     </div>
+      </div>
       </div> 
       
-      <div>
-      <div className="text-center font-bold text-2xl m-5 uppercase">contact </div>
-      <div className="w-full border-2 h-96 flex  pt-10 ">
-      <div className="w-[30%] border-2 flex flex-col"><div className="border-2 h-72 text-center bg-slate-600 text-white m-10"><p  className="text-2xl font-bold p-4">Location Detail</p ><p className="text-xl font-bold">Addresss </p> <p className="text-slate-400">BSI Tower h-15</p>
-      <p className="text-xl font-bold">Phone number</p ><p className="text-slate-400">0123456789</p><p className="text-xl font-bold">Email Address</p><p className="text-slate-400">info@gmail.com</p></div></div>
-      <div className="w-[70%] border-2 flex flex-col">
-        <form   className="px-10">
-          <div className="w-full flex gap-10 my-4 ">
-          <div  className="w-full flex flex-col my-4">
-            <label  className="font-bold text-gray-800" htmlfor="name">Name </label>
-          <input 
-        
-          className="bg-slate-200" 
-          type="text"
-          required
-          minLength={5}
-          maxLength={20}
-          autoComplete="off"
-           id="name"/>
-           </div>
-         <div  className="w-full flex flex-col my-4">
-          <label  className="font-bold text-gray-800" htmlfor="name">Email </label>
-          <input  
-          className="bg-slate-200" 
-          type="email" 
-          required
-          minLength={10}
-          maxLength={20}
-          autoComplete="off"
-          id="email"/>
-          </div>
-          </div>
-          <div>
-          <label className="font-bold" htmlFor="message">Message</label>
-          <textarea
-          rows={2}
-          required
-          minLength={5}
-          maxLength={100}
-          name="message"
-          className="w-full p-4 bg-gray-200 border border-gray-100"/>
-          </div>
-          <button type="submit" className="px-4 py-2 w-40 bg-gray-700 text-white mt-4 rounded-2xl ">Send Message</button>
-        </form>
-      </div>
-      </div>
-      </div>
+      
+    
     </main>
   )
 }

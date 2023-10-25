@@ -1,40 +1,74 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+
+
 const Apartment = () => {
   return (
-    <div className="pt-20 border-2 border-black">
+    <div className=" border-2 border-black">
+      <div class="back">
       <div className="w-full h-56  text-center ">
         <p>welcome to my Apartment family always staisfied you</p>
        <p >looking it </p>
-       <button className="rounded-full border-2 mt-10 px-8 py-5 text-center text-purple-300 bg-purple-950">Booking now</button></div>
-    <div className="border-2  w-full p-10 bg-yellow-100 ">
-        <div className="border-2   w-[80%]  h-56">
+       {/* <Link href="/Booking">Booking Now</Link> */}
+        <button className="rounded-full border-2 mt-10 px-8 py-5 text-center text-purple-300 bg-purple-950">Booking now</button> 
+            </div>
+            </div>
+    <div className="border-2  w-full p-6  ">
+        <div className="border-2   w-[90%]  h-56">
             <Image
-      src="/img/gal-1.jpeg" width={500} height={500}
+      src="/img/Living room.jpeg" width={500} height={500}
       className="w-full h-full "
       alt="Living room" 
     /> </div></div>
-  <div className="border-2  w-full p-10 bg-yellow-100">
+  <div className="border-2  w-full p-4 ">
         <div className="border-2   w-[80%]  h-56">
             <Image
-      src="/img/gal-1.jpeg" width={500} height={500}
+      src="/img/Kitchen.jpeg" width={500} height={500}
       className="w-full h-full "
       alt="kitchen" 
     /> </div></div>
-    <div className="border-2  w-full p-10 bg-yellow-200">
-        <div className="border-2   w-[80%]  h-56">
+    <div className="border-2  w-full p-6">
+        <div className="border-2   w-[90%]  h-56">
             <Image
-      src="/img/gal-1.jpeg" width={500} height={500}
+      src="/img/badroom.jpeg" width={500} height={500}
       className="w-full h-full "
       alt="Bad room" 
     /> </div></div>
-    <div className="border-2  w-full p-10 bg-yellow-900">
+    <div className="border-2  w-full p-4 ">
         <div className="border-2   w-[80%]  h-56">
             <Image
-      src="/img/gal-1.jpeg" width={500} height={500}
+      src="/img/bethroom.jpg" width={500} height={500}
       className="w-full h-full "
       alt="bath room" 
     /> </div></div>
+    <div className="border-2  w-full  bg-purple-200" > 
+      <div className=" border-2 font-bold  py-5 sm:px-10 lg:px-56">
+        <div className="text-orange-800 text-center border-2 p-1">Here is what we can do for you we are experts at several thing and agood at edgerly following daily trends</div> </div>
+ <div className="border-2  w-full  p-2 gap-2 flex">
+        <div className="border-2 flex flex-col w-full text-center p-3 rounded-xl ">
+          <p className="font-bold text-2xl pb-2  ">Home interior Design</p>
+          <p>High Creation Interior understandands interior designing is not about arranging thing in the pattern but about utilizing the given space effectively to ensure it both looks and feels good. So conect with us , and let's discuss your requirements.</p>
+          </div>
+          <div className="border-2 flex flex-col w-full text-center p-3 rounded-xl">
+          <p className="font-bold text-2xl pb-2  ">Living Room  interior Design</p>
+          <p>High Creation Interior understandands interior designing is not about arranging thing in the pattern but about utilizing the given space effectively to ensure it both looks and feels good. So conect with us , and let's discuss your requirements.</p>
+          </div>
+          <div className="border-2 flex flex-col w-full text-center p-3 rounded-xl">
+          <p className="font-bold text-2xl pb-2  ">Modular kitchen interior Design</p>
+          <p>High Creation Interior understandands interior designing is not about arranging thing in the pattern but about utilizing the given space effectively to ensure it both looks and feels good. So conect with us , and let's discuss your requirements.</p>
+          </div>
+          <div className="border-2 flex flex-col w-full text-center p-3 rounded-xl">
+          <p className="font-bold text-2xl pb-2  ">Corporate interior Design</p>
+          <p>High Creation Interior understandands interior designing is not about arranging thing in the pattern but about utilizing the given space effectively to ensure it both looks and feels good. So conect with us , and let's discuss your requirements.</p>
+          </div>
+          <div className="border-2 flex flex-col w-full text-center p-3 rounded-xl">
+          <p className="font-bold text-2xl pb-2  ">Other Architecture Design</p>
+          <p>High Creation Interior understandands interior designing is not about arranging thing in the pattern but about utilizing the given space effectively to ensure it both looks and feels good. So conect with us , and let's discuss your requirements.</p>
+          </div>
+          
+        </div>
+        </div>
 
     
     </div>
