@@ -1,19 +1,14 @@
+"use client";
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import ImageButton from '../../components/ImageButton'
 
 const Apartment = () => {
   return (
-    <div className=" border-2 border-black">
-      <div class="back">
-      <div className="w-full h-56  text-center ">
-        <p>welcome to my Apartment family always staisfied you</p>
-       <p >looking it </p>
-       {/* <Link href="/Booking">Booking Now</Link> */}
-        <button className="rounded-full border-2 mt-10 px-8 py-5 text-center text-purple-300 bg-purple-950">Booking now</button> 
-            </div>
-            </div>
+    <div className=" border-2 border-black ">
+     <ImageButton/>
     <div className="border-2  w-full p-6  ">
         <div className="border-2   w-[90%]  h-56">
             <Image
@@ -70,7 +65,7 @@ const Apartment = () => {
         </div>
         </div>
 
-    
+        
     </div>
   )
 }

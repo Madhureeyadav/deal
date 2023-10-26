@@ -1,12 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import ImageButton from '../../components/ImageButton'
+
 const Farmhouse = () => {
   return (
-    <div className="pt-10 border-2 border-black">
-      <div className="w-full h-56  text-center ">
-        <p>welcome to my Farmhouse family always staisfied you</p>
-       <p >looking it </p>
-       <button className="rounded-full border-2 mt-10 px-8 py-5 text-center text-green-300 bg-green-600">Booking now</button></div>
+    <div className=" border-2 border-black">
+      <ImageButton/>
     <div className="border-2  w-full p-4 ">
         <div className="border-2   w-[80%]  h-56">
             <Image
