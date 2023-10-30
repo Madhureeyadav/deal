@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import {AiOutlineVerticalLeft } from "react-icons/ai"
+import Link from "next/link"
 
   async function handleSubmit(event){
       event.preventDefualt();
@@ -131,14 +132,14 @@ const Deal = () => {
       </div>  
       </div>
 
-      <div className="w-full border-2 h-36 flex gap-2 mt-4 p-2 ">
+      {/* <div className="w-full border-2 h-36 flex gap-2 mt-4 p-2 ">
       <div className="w-full border-2 flex"><Image src="/img/gal-4.jpeg" width={500} height={500} className="relative" ></Image>
       <div className="absolute ">plot</div></div>
       <div className="w-full border-2 flex "><Image src="/img/gal-7.jpeg" width={500} height={500} className="relative" ></Image>
       <div className="absolute ">unfanictured</div></div>
       <div className="w-full border-2 flex "><Image src="/img/gal-6.jpeg" width={500} height={500} className="relative" ></Image>
       <div className="absolute ">fanitured</div></div>
-      </div> 
+      </div>  */}
 
 
       {/* <div className=" border-2">
@@ -154,26 +155,37 @@ const Deal = () => {
       
      
       <div className="w-full border-2  h-72 px-2"> <div className="text-center font-bold  p-2">property</div>
-      <div className=" border-2 text-center h-56 px-48 py-10 flex"> 
+      <div className=" border-2 text-center h-64 px-48 py-10 flex"> 
         <div className=" flex flex-col border-2 w-full ">
           
         <Image src="/img/gal-12.jpeg" 
         width={500} 
         height={500}
-         className="w-full  h-full hover:bg-primary ">
+         className="w-full  h-full hover:bg-purple-500  opacity-75">
 
          </Image>
+        <div className="p-1"> 
+        <button className="border bg-slate-700 rounded-full p-1 px-2 text-slate-200 hover:bg-slate-900">
+          <Link href="/Property/Apartment">Explore Apartment</Link>
+          </button>
+        </div>
         </div>
          <div className="flex flex-col border-2 w-full  ">
           <Image src="/img/farmhouse.jpg" width={500} 
           height={500} 
-          className="w-full  h-full ">
-            </Image></div>
+          className="w-full  h-full opacity-75">
+            </Image>
+            <div className="p-1"> 
+        <button className="border bg-slate-700 rounded-full p-1 px-2 text-slate-200 hover:bg-slate-900">
+          <Link href="/Property/Farmhouse">Explore Farmhouse</Link>
+          </button>
+        </div>
+            </div>
         </div></div>
    
 
      
-        <div className="flex flex-col" > <div className="text-center font-bold  p-2">Agent Meet</div> </div>
+        <div className="flex flex-col b" > <div className="text-center font-bold  p-2">Agent Meet</div> </div>
       <div className="w-full border-2 h-36 flex gap-5  p-8 ">
       <div className="w-full border-2 flex rounded-2xl ">
         <div>

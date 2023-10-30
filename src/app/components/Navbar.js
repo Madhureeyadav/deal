@@ -28,7 +28,7 @@ const Navbar = () => (
 //   </div>
   
  
-     <nav className="bg-blue-950  ">
+     <nav className="bg-blue-950 fixed w-full ">
 {/* 
      <div className="  justify-around border-2  px-5 "> */}
        <div className="relative w-full mx-auto flex items-center justify-between ">

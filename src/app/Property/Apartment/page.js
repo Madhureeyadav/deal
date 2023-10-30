@@ -4,12 +4,36 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import ImageButton from '../../components/ImageButton'
-
+import CountRow from '../../components/CountRow'
 const Apartment = () => {
+
+  const contentData1 = [
+    {
+      imageUrl: '/img/icon1.png',
+      heading: 'Column 1 Heading',
+      paragraph: 'Content for column 1 goes here.',
+      buttonText: 'Button 1',
+    },
+    {
+      imageUrl: '/img/icon1.png',
+      heading: 'Column 2 Heading',
+      paragraph: 'Content for column 2 goes here.',
+      buttonText: 'Button 2',
+    },
+    {
+      imageUrl: '/img/icon1.png',
+      heading: 'Column 3 Heading',
+      paragraph: 'Content for column 3 goes here.',
+      buttonText: 'Button 3',
+    },
+  ];
+
+
   return (
+    <>
     <div className=" border-2 border-black ">
      <ImageButton/>
-    <div className="border-2  w-full p-6  ">
+    {/* <div className="border-2  w-full p-6  ">
         <div className="border-2   w-[90%]  h-56">
             <Image
       src="/img/Living room.jpeg" width={500} height={500}
@@ -63,10 +87,17 @@ const Apartment = () => {
           </div>
           
         </div>
-        </div>
+        </div> */}
 
         
     </div>
+     <div className="mt-64 ">
+     <div className="text-center fond-bold text-2xl">Featured Listing</div>
+     <div className="container p-10 border-2 mt-8">
+      <CountRow content={contentData1} />
+    </div>
+   </div>
+   </>
   )
 }
 

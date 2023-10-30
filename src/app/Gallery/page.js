@@ -7,7 +7,7 @@ import Link from 'next/link'
 const gallery = () => {
   return (
     <div className="pt-20"> 
-    <div className="font-bold text-center p-3">Apartment Images</div>
+    <div className="font-bold text-center p-3">Apartment Imagesm jik </div>
          <div className="flex  ">
   
   <div className="lg:w-1/3  md:w-full pr-4 pl-4 mb-4 lg:mb-0">

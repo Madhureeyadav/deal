@@ -2,34 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-.back, .back1{
-    background-image: url(/img/font.jpg);
-    background-repeat: no-repeat;
-  width: 100%;
-  height:100%;
-  background-position: center;
-  
-  /* background-attachment: fixed; */
-    
-}
-.back1{
-    background-image: url(/img/font2.jpg);
-    background-repeat: no-repeat;
-  width: 100%;
-  height:100%;
-  background-position: center;
-  background-size: cover;
-  /* background-attachment: fixed; */
-    
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}

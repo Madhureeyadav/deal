@@ -5,8 +5,8 @@
 
 import React from 'react';
 import CustomButton from '../components/CustomButton';
-
-
+import Map from '../components/Map'
+import Image from 'next/image'
 
 
 const Contact1 = () => {
@@ -18,9 +18,16 @@ const Contact1 = () => {
  
   return (
    
-       <div>
-      <div className="text-center font-bold text-2xl m-5 uppercase">contact </div>
-      <div className="w-full border-2 h-96 flex  pt-10 ">
+       <div className="">
+      
+      <div className="flex padding-x  ">
+        <Image src="/img/f2.jpg" width={500} height={500} className="w-full h-64 opacity-75 object-cover" >
+          
+        </Image>
+        <div className="text-2xl absolute  pl-36 pt-40">Contact Us </div>
+       </div >
+      <Map/>
+      <div className="w-full border-2 h-96 flex   ">
       <div className="w-[30%] border-2 flex flex-col"><div className="border-2 h-72 text-center bg-slate-600 text-white m-10"><p  className="text-2xl font-bold p-4">Location Detail</p ><p className="text-xl font-bold">Addresss </p> <p className="text-slate-400">BSI Tower h-15</p>
       <p className="text-xl font-bold">Phone number</p ><p className="text-slate-400">0123456789</p><p className="text-xl font-bold">Email Address</p><p className="text-slate-400">info@gmail.com</p></div></div>
       <div className="w-[70%] border-2 flex flex-col">
