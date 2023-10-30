@@ -9,10 +9,19 @@ const Apartment = () => {
 
   const contentData1 = [
     {
-      imageUrl: '/img/icon1.png',
-      heading: 'Column 1 Heading',
-      paragraph: 'Content for column 1 goes here.',
-      buttonText: 'Button 1',
+      // imageUrl: '/img/icon1.png',
+      // heading: 'Column 1 Heading',
+      // paragraph: 'Content for column 1 goes here.',
+      // buttonText: 'Button 1',
+      id: 1,
+    image: "img/product-3/3.jpg",
+    title: "New Apartment Nice View",
+    location: "Belmont Gardens, Chicago",
+    bedrooms: 3,
+    bathrooms: 2,
+    area: 3450,
+    price: 34900,
+  
     },
     {
       imageUrl: '/img/icon1.png',

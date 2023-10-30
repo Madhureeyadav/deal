@@ -9,7 +9,7 @@ const Contact = () => {
     <div>
        
     <div className="  border-2 w-full p-5 h-96  bg-black text-white ">
-  <div className="flex ">
+   <div className="flex ">
       <div className="flex flex-col border-2 w-full h-80 pl-2  ">
         <div className="font-bold p-2">Company</div>
         <div>About</div>
@@ -51,7 +51,9 @@ const Contact = () => {
         <div>Media Converage</div>
         <div>Glossary</div>
       </div>
-      </div>
+      </div> 
+
+      
       <div className="flex w-full">
       
      <div className="flex flex-col w-full text-center">@copy. All right reversed </div>
