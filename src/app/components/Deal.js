@@ -2,41 +2,71 @@ import React from 'react'
 import Image from 'next/image'
 import {AiOutlineVerticalLeft } from "react-icons/ai"
 import Link from "next/link"
+import BookingForm from '../components/BookingForm'
+import Agent from '../components/Agent'
+import MainFocus from './MainFocus'
 
-  async function handleSubmit(event){
-      event.preventDefualt();
-    
-      const data={
-        name:String(event.target.name.value),
-        email:String(event.target.email.value),
-        meassage:String(event.target.message.value),
-        };
-    
-        const response =await fetch("api/contact",{
-          method:"POST",
-          headers:{
-            "content-Type":"application/json",
-          },
-          body:JSON.stringify(data),
-    });
-    if(response.ok){
-      console.log("Message sent successfully")
-    }
-    if(response.ok){
-      console.log("Error sending the message")
-    }
-    }
+  
 const Deal = () => {
   return (
-    <main className="overflow:hidden">
-     <div className="flex xl:flex-row flex-col gap-5  max-w-[1440px] mx-auto">
-      <div className="flex  padding-x">
-        <Image src="/img/gal-11.jpeg" width={500} height={500} className="w-full h-72 " >
-          
-        </Image>
-        
-       </div>
+    <main className="overflow-hidden">
       
+     <div className="flex xl:flex-row flex-col gap-5  max-w-[1440px] mx-auto">
+     <div className="flex padding-x">
+     <div className="ltn__slide-item-inner">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 align-self-center">
+            <div className="slide-item-info">
+              <div className="slide-item-info-inner ltn__slide-animation">
+                <div className="slide-video mb-50 hidden">
+                  <a
+                    className="ltn__video-icon-2 ltn__video-icon-2-border"
+                    href="https://www.youtube.com/embed/tlThdr3O5Qo"
+                    data-rel="lightcase:myCollection"
+                    tabIndex="0"
+                  >
+                    <i className="fa fa-play"></i>
+                  </a>
+                </div>
+                <h6 className="slide-sub-title white-color--- animated">
+                  <span>
+                    <i className="fas fa-home"></i>
+                  </span>{' '}
+                  Real Estate Agency
+                </h6>
+                <h1 className="slide-title animated ">
+                  Find Your Dream <br /> House By Us
+                </h1>
+                <div className="slide-brief animated">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore.
+                  </p>
+                </div>
+                <div className="btn-wrapper animated">
+                  <a href="about.html" className="theme-btn-1 btn btn-effect-1" tabIndex="0">
+                    Make An Enquiry
+                  </a>
+                  <a
+                    className="ltn__video-play-btn bg-white"
+                    href="https://www.youtube.com/embed/HnbMYzdjuBs?autoplay=1&amp;showinfo=0"
+                    data-rel="lightcase"
+                    tabIndex="0"
+                  >
+                    <i className="icon-play  ltn__secondary-color"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="slide-item-img">
+              <img src="img/slider/21.png" alt="#" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
      </div>
      <div>
      <div className="text-center font-bold text-2xl m-5 uppercase ">Property 
@@ -132,26 +162,7 @@ const Deal = () => {
       </div>  
       </div>
 
-      {/* <div className="w-full border-2 h-36 flex gap-2 mt-4 p-2 ">
-      <div className="w-full border-2 flex"><Image src="/img/gal-4.jpeg" width={500} height={500} className="relative" ></Image>
-      <div className="absolute ">plot</div></div>
-      <div className="w-full border-2 flex "><Image src="/img/gal-7.jpeg" width={500} height={500} className="relative" ></Image>
-      <div className="absolute ">unfanictured</div></div>
-      <div className="w-full border-2 flex "><Image src="/img/gal-6.jpeg" width={500} height={500} className="relative" ></Image>
-      <div className="absolute ">fanitured</div></div>
-      </div>  */}
-
-
-      {/* <div className=" border-2">
-      <Image src="/img/house-6.jpeg" width={500} height={500} className=" w-full  h-56 " ></Image>
       
-      <div className="absolute ">fanitured</div>
-      
-      
-      
-     
-      </div>
-     */}
       
      
       <div className="w-full border-2  h-72 px-2"> <div className="text-center font-bold  p-2">property</div>
@@ -185,64 +196,8 @@ const Deal = () => {
    
 
      
-        <div className="flex flex-col b" > <div className="text-center font-bold  p-2">Agent Meet</div> </div>
-      <div className="w-full border-2 h-36 flex gap-5  p-8 ">
-      <div className="w-full border-2 flex rounded-2xl ">
-        <div>
-        <Image src="/img/realtor-1.jpeg" 
-        width={500} 
-        height={500} 
-        className="w-full h-full rounded-2xl  ">
-        </Image></div>
-       <div className="w-full text-blue-900  text-center inline-flex"> 
-       <AiOutlineVerticalLeft size={20} className="" />
-     Any query call me
-     
-     </div>
-    </div>
-      <div className="w-full border-2 flex ">
-      <div>
-        <Image src="/img/realtor-1.jpeg" 
-        width={500} 
-        height={500} 
-        className="w-full h-full rounded-2xl  ">
-        </Image></div>
-       <div className="w-full text-blue-900  text-center inline-flex"> 
-       <AiOutlineVerticalLeft size={20} className="" />
-     Any query call me
-     
-     </div>
-      </div>
-      <div className="w-full border-2 flex ">
-      <div>
-        <Image src="/img/realtor-1.jpeg" 
-        width={500} 
-        height={500} 
-        className="w-full h-full rounded-2xl  ">
-        </Image></div>
-       <div className="w-full text-blue-900  text-center inline-flex"> 
-       <AiOutlineVerticalLeft size={20} className="" />
-     Any query call me
-     
-     </div>
-      </div>
-      <div className="w-full border-2 flex ">
-      <div>
-        <Image src="/img/realtor-1.jpeg" 
-        width={500} 
-        height={500} 
-        className="w-full h-full rounded-2xl  ">
-        </Image></div>
-       <div className="w-full text-blue-900  text-center inline-flex"> 
-       <AiOutlineVerticalLeft size={20} className="" />
-     Any query call me
-     
-     </div>
-      </div>
-      </div> 
-      
-      
-    
+        <Agent/>
+        <MainFocus/>
     </main>
   )
 }

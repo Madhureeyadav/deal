@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Deal/>
-     <Contact1/>
+   
     </div>
   )
 }

@@ -25,6 +25,12 @@ const ImageButton = () => {
       paragraph: 'Content for column 3 goes here.',
       buttonText: 'Button 3',
     },
+    {
+      imageUrl: '/img/gal-1.jpeg',
+      heading: 'Column 3 Heading',
+      paragraph: 'Content for column 3 goes here.',
+      buttonText: 'Button 3',
+    },
   ];
     
       return (

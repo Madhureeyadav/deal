@@ -41,13 +41,14 @@ const Navbar = () => (
         <div className="absolute bottom-0 w-full h-1 bg-blue-200 hidden group-hover:block transition duration-300"></div>
       </li>
       <li className="text-white font-mulish hover:text-blue-200 transition duration-300 relative group">
-        <Dropdown /> {/* Assuming you have a Dropdown component */}
+      <Link href="/Property"><Dropdown /></Link>  {/* Assuming you have a Dropdown component */}
         <div className="absolute bottom-0 w-full h-1 bg-blue-200 hidden group-hover:block transition duration-300"></div>
       </li>
       <li className="text-white font-mulish hover:text-blue-200 transition duration-300 relative group">
         <Link href="/Gallery">Gallery</Link>
         <div className="absolute bottom-0 w-full h-1 bg-blue-200 hidden group-hover:block transition duration-300"></div>
       </li>
+     
       <li className="text-white font-mulish hover:text-blue-200 transition duration-300 relative group">
         <Link href="/Contact1">Contact</Link>
         <div className="absolute bottom-0 w-full h-1 bg-blue-200 hidden group-hover:block transition duration-300"></div>

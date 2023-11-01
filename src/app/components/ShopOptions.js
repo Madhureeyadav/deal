@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTh, faThList } from '@fortawesome/free-solid-svg-icons';
 
@@ -6,14 +7,26 @@ const ShopOptions = () => {
   return (
     <div className="flex items-center border border-gray-300 rounded-lg p-2">
       <div className="flex items-center space-x-4">
-      <FontAwesomeIcon icon={faTh} className="mr-2" /> 
-        <button className="px-1 py-1  text-gray-700 rounded-lg hover:bg-gray-400 transition duration-300">
-          <FontAwesomeIcon icon={faTh} className="mr-2 w-10 h-7" /> 
-        </button>
+      
+      
+            
+             <button className="px-1 py-1  text-gray-700 rounded-lg hover:bg-gray-400 transition duration-300">
+          <FontAwesomeIcon icon={faTh }
+           className="mr-2 w-10 h-7"/>
+            </button>
+            
+           
+           
+        
+             
         <button className="px-1 py-1  text-gray-700 rounded-lg hover:bg-gray-400  transition duration-300">
           <FontAwesomeIcon icon={faThList} className="mr-2 w-10 h-7" />
         </button>
-      </div>
+       
+</div>
+
+
+
       <div className="justify-around px-20">
       <li className="flex items-center">
       <div className=" text-center md:mr-4">

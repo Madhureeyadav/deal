@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import SearchBar from "../../components/Searchbar"
-import FarmhouseImage from '../../components/FarmhouseImage'
+import FarhouseImage1 from '../../components/FarhouseImage1'
 import ShopOptions from '../../components/ShopOptions'
 const Farmhouse = () => {
   return (
@@ -25,7 +25,7 @@ const Farmhouse = () => {
        */}
       
        
-      <FarmhouseImage/>
+      <FarhouseImage1/>
 
       <div className="bg-green-200 p-4 rounded mb-4">
         <p className="text-green-800">Special Offer: Get 10% off on your first farmhouse purchase!</p>
