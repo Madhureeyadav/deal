@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import {AiOutlineVerticalLeft } from "react-icons/ai"
@@ -5,70 +6,38 @@ import Link from "next/link"
 import BookingForm from '../components/BookingForm'
 import Agent from '../components/Agent'
 import MainFocus from './MainFocus'
-
-  
+import PlotingPlan from './PlotingPlan'
+ import FontPage from './FontPage'
+import VideoPlayer1 from './VideoPlayer1'
+import Feedback from './Feedback'
+import FindPlot from './FindPlot'
+// import ParentComponent from './ParentComponent'
+import Counter from './Counter'
 const Deal = () => {
   return (
     <main className="overflow-hidden">
       
-     <div className="flex xl:flex-row flex-col gap-5  max-w-[1440px] mx-auto">
-     <div className="flex padding-x">
-     <div className="ltn__slide-item-inner">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12 align-self-center">
-            <div className="slide-item-info">
-              <div className="slide-item-info-inner ltn__slide-animation">
-                <div className="slide-video mb-50 hidden">
-                  <a
-                    className="ltn__video-icon-2 ltn__video-icon-2-border"
-                    href="https://www.youtube.com/embed/tlThdr3O5Qo"
-                    data-rel="lightcase:myCollection"
-                    tabIndex="0"
-                  >
-                    <i className="fa fa-play"></i>
-                  </a>
-                </div>
-                <h6 className="slide-sub-title white-color--- animated">
-                  <span>
-                    <i className="fas fa-home"></i>
-                  </span>{' '}
-                  Real Estate Agency
-                </h6>
-                <h1 className="slide-title animated ">
-                  Find Your Dream <br /> House By Us
-                </h1>
-                <div className="slide-brief animated">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore.
-                  </p>
-                </div>
-                <div className="btn-wrapper animated">
-                  <a href="about.html" className="theme-btn-1 btn btn-effect-1" tabIndex="0">
-                    Make An Enquiry
-                  </a>
-                  <a
-                    className="ltn__video-play-btn bg-white"
-                    href="https://www.youtube.com/embed/HnbMYzdjuBs?autoplay=1&amp;showinfo=0"
-                    data-rel="lightcase"
-                    tabIndex="0"
-                  >
-                    <i className="icon-play  ltn__secondary-color"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="slide-item-img">
-              <img src="img/slider/21.png" alt="#" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      </div>
-     </div>
-     <div>
+      <FontPage/>
+   <FindPlot/>
+<PlotingPlan/>
+
+        <MainFocus/>
+        <VideoPlayer1/>
+        <Agent/>
+        {/* <ParentComponent/> */}
+        <Counter/>
+      <Feedback/>
+    </main>
+  )
+}
+
+export default Deal
+     {/* <div className="flex xl:flex-row flex-col  max-w-[1440px] mx-auto"> */}
+   
+    
+
+     {/* </div> */}
+     {/* <div>
      <div className="text-center font-bold text-2xl m-5 uppercase ">Property 
      <div className="w-full border-2 h-72 flex pt-10 ">
       <div className="w-full border-2 flex flex-col">
@@ -192,14 +161,4 @@ const Deal = () => {
           </button>
         </div>
             </div>
-        </div></div>
-   
-
-     
-        <Agent/>
-        <MainFocus/>
-    </main>
-  )
-}
-
-export default Deal
+        </div></div> */}

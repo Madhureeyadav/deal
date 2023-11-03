@@ -5,6 +5,8 @@ import ImageApartment from '../components/ImageApartment'
 import ImageProperty from '../components/ImageProperty'
 import BookingForm from '../components/BookingForm'
 import PropertyType from '../components/PropertyType'
+import Agent from '../components/Agent'
+
 const apartments = [
   { id: 1, name: 'Apartment A', description: 'Beautiful apartment with a view', price: 1000 , rating: 4 },
   { id: 2, name: 'Apartment B', description: 'Cozy apartment in the heart of the city', price: 800 ,rating: 4 },
@@ -165,15 +167,8 @@ const property = () => {
     </div>
 
 
-
-      <div className="w-full h-64 bg-gradient-to-r from-indigo-500 text-black">
-        <div className="p-2  w-[40%] text-center">
-          <p className="p-4 font-bold">Modern interior Design</p>
-          <p>if you are looking out for a beutiful here that fits in you budget , yes you are at the right place , we will make your dream  home come</p>
-        
-        </div>
-        <button className="border-2 rounded-full ml-20 mt-10 p-1 px-3 bg-gradient-to-r from-green-400 to-blue-500">Let's Connect</button>
-      </div>
+<Agent/>
+      
 </div>
   )
 }

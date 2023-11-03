@@ -8,7 +8,7 @@ const Apartment = () => {
   return (
     <div className="pt-20 ">
      
-     <Image src="/img/f1.jpg" alt="Farmhouse image" width={500} height={100} className="w-full h-52 object-cover"/>
+     <Image src="/img/f1.jpg" alt="Farmhouse image" width={500} height={100}  className="w-full h-52 object-cover"/>
       
       
       

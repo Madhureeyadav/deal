@@ -45,8 +45,8 @@ const Agent = () => {
       ];
     return (
     //   
-    <div className="container mx-auto my-8">
-    <h1 className="text-3xl  text-center font-semibold mb-4">Call Agents</h1>
+    <div className="container mx-auto my-8 bg-white p-4 rounded shadow-lg">
+    <h1 className="text-3xl  text-center font-semibold mb-4 ">Call Agents</h1>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {farmhouseData.map((property) => (
         <div key={property.id} className="bg-white rounded p-4 shadow-md">

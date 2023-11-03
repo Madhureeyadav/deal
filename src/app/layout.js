@@ -14,7 +14,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="relative" >
         <Navbar/>
-          {children}</body>
+        <main>
+          {children}
+          </main>
+          </body>
           <Contact/>
     </html>
   )
