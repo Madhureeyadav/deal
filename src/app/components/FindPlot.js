@@ -3,17 +3,11 @@ import React from 'react'
 const FindPlot = () => {
     
         return (
-          <div className="flex items-center border border-gray-300 rounded-xl p-5">
-            <div className="flex items-center space-x-4">
-            
-            
-                  
-                 
-      </div>
-      <div className="justify-around px-20">
+          <div className="flex items-center border border-gray-300 rounded-xl p-5 m-7 sm:m-2">
+            <div className="justify-around px-20">
             <li className="flex items-center">
             <div className=" text-center md:mr-4">
-            <select className=" bg-gray-100 border  border-gray-300 rounded-xl p-2 text-gray-800 focus:outline-none focus:border-blue-500 transition duration-300">
+            <select className=" bg-gray-100 border  border-gray-300 rounded-xl p-5 text-gray-800 focus:outline-none focus:border-blue-500 transition duration-300">
         <option className="text-gray-500">Default sorting</option>
         <option className="text-gray-500">Sort by popularity</option>
         <option className="text-gray-500">Sort by new arrivals</option>
@@ -38,7 +32,7 @@ const FindPlot = () => {
          <div className="justify-around px-20">
             <li className="flex items-center">
             <div className=" text-center md:mr-4">
-            <select className=" bg-gray-100 border  border-gray-300 rounded-xl p-2 text-gray-800 focus:outline-none focus:border-blue-500 transition duration-300">
+            <select className=" bg-gray-100 border  border-gray-300 rounded-xl p-5 text-gray-800 focus:outline-none focus:border-blue-500 transition duration-300">
         <option className="text-gray-500">Default sorting</option>
         <option className="text-gray-500">Sort by popularity</option>
         <option className="text-gray-500">Sort by new arrivals</option>
@@ -66,7 +60,7 @@ const FindPlot = () => {
             <div className="justify-around px-20">
             <li className="flex items-center">
             <div className=" text-center md:mr-4">
-            <select className=" bg-gray-100 border  border-gray-300 rounded-xl p-2 text-gray-800 focus:outline-none focus:border-blue-500 transition duration-300">
+            <select className=" bg-gray-100 border  border-gray-300 rounded-xl p-5 text-gray-800 focus:outline-none focus:border-blue-500 transition duration-300">
         <option className="text-gray-500">Default sorting</option>
         <option className="text-gray-500">Sort by popularity</option>
         <option className="text-gray-500">Sort by new arrivals</option>

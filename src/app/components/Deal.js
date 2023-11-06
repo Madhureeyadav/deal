@@ -11,6 +11,8 @@ import PlotingPlan from './PlotingPlan'
 import VideoPlayer1 from './VideoPlayer1'
 import Feedback from './Feedback'
 import FindPlot from './FindPlot'
+import SellProperty from './SellProperty'
+
 // import ParentComponent from './ParentComponent'
 import Counter from './Counter'
 const Deal = () => {
@@ -19,6 +21,7 @@ const Deal = () => {
       
       <FontPage/>
    <FindPlot/>
+   <SellProperty/>
 <PlotingPlan/>
 
         <MainFocus/>

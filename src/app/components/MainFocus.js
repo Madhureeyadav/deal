@@ -5,21 +5,21 @@ const MainFocus = () => {
        
         {
           id: 1,
-          imageUrl: '/img/icon1.png',
+          imageUrl: '/img/service-1.png',
           title: "For Sell",
           description: "New Apartment Nice View",
           
         },
         {
             id: 1,
-            imageUrl: '/img/icon2.png',
+            imageUrl: '/img/service-2.png',
             title: "For Sell",
             description: "New Apartment Nice View",
             
           },
           {
             id: 1,
-            imageUrl: '/img/icon3.png',
+            imageUrl: '/img/service-3.png',
             title: "For Sell",
             description: "New Apartment Nice View",
             

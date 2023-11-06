@@ -94,14 +94,14 @@ const property = () => {
   return (
     <div className="pt-20">
   <div className="flex xl:flex-row flex-col gap-5  max-w-[1440px] mx-auto">
-     <div className="flex p-x ">
+     <div className="flex w-full">
   {/* First Column (Image) */}
-  <div className="flex-none p-4">
-    <Image src="/img/gal-11.jpeg" width={500} height={500} className="w-full h-72" />
+  <div className=" w-1/2 p-4">
+    <Image src="/img/best.jpg" width={1000} height={500} className="w-full " />
   </div>
   
   {/* Second Column (Booking Form) */}
-  <div className="flex-1 p-4">
+  <div className=" w-1/2  p-4">
     <BookingForm />
   </div>
 </div>
