@@ -30,9 +30,10 @@ const SellProperty = () => {
 
       {/* Right Column */}
       <div className="md:w-1/2 p-4">
-        <Image src="/img/Living.jpeg" alt="Living Room"
+        <Image src="/img/plot.jpg" alt="Living Room"
         width={500}
-         height={400} />
+         height={500} 
+         className="h-full w-full"/>
       </div>
     </div>
   );

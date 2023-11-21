@@ -5,7 +5,7 @@ const FarhouseImage1 = () => {
     const farmhouseData = [
         {
           id: 1,
-          imageUrl: '/img/f1.jpg',
+          imageUrl: '/img/plot4.jpg',
           title: "For Sell",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -16,7 +16,7 @@ const FarhouseImage1 = () => {
         },
         {
           id: 1,
-          imageUrl: '/img/f1.jpg',
+          imageUrl: '/img/feild4.jpg',
           title: "For Sell",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -28,7 +28,7 @@ const FarhouseImage1 = () => {
         
         {
           id: 1,
-          imageUrl: '/img/f1.jpg',
+          imageUrl: '/img/feild2.jpeg',
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -40,7 +40,7 @@ const FarhouseImage1 = () => {
         
         {
           id: 1,
-          imageUrl: '/img/f1.jpg',
+          imageUrl: '/img/feild3.jpeg',
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -52,7 +52,7 @@ const FarhouseImage1 = () => {
         
         {
           id: 1,
-          imageUrl: '/img/f1.jpg',
+          imageUrl: '/img/feild5.jpeg',
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -64,7 +64,7 @@ const FarhouseImage1 = () => {
         
         {
           id: 1,
-          imageUrl: '/img/f1.jpg',
+          imageUrl: '/img/feild.jpeg',
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",

@@ -23,7 +23,7 @@ const property = () => {
   const farmhouseData = [
     {
       id: 1,
-      imageUrl: '/img/f1.jpg',
+      imageUrl: '/img/plot4.jpg',
       title: "For Sell",
       description: "New Apartment Nice View",
       location: "Belmont Gardens, Chicago",
@@ -34,7 +34,7 @@ const property = () => {
     },
     {
       id: 1,
-      imageUrl: '/img/f1.jpg',
+      imageUrl: '/img/plot3.jpeg',
       title: "For Sell",
       description: "New Apartment Nice View",
       location: "Belmont Gardens, Chicago",
@@ -45,7 +45,7 @@ const property = () => {
     },
     {
       id: 1,
-      imageUrl: '/img/f1.jpg',
+      imageUrl: '/img/f7.jpg',
       title: "For Sell",
       description: "New Apartment Nice View",
       location: "Belmont Gardens, Chicago",
@@ -56,7 +56,7 @@ const property = () => {
     },
     {
       id: 1,
-      imageUrl: '/img/f1.jpg',
+      imageUrl: '/img/f5.jpg',
       title: "For Sell",
       description: "New Apartment Nice View",
       location: "Belmont Gardens, Chicago",

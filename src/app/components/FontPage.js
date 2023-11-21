@@ -14,7 +14,7 @@ const FontPage = () => {
     <div className="bg-gray-100 py-20 ">
         
     <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
-    <Link className="pr-10" href={"/FontPage1"}><AiOutlineArrowLeft size={20}/></Link> 
+    <Link className="pr-10" href={"<FontPage1/>"}><AiOutlineArrowLeft size={20}/></Link> 
       <div className="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
       
     
