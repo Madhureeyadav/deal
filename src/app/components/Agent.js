@@ -5,7 +5,7 @@ const Agent = () => {
        
         {
           id: 1,
-          imageUrl: '/img/realtor-3.jpeg',
+          imageUrl: '/img/realtor-1.jpeg',
           title: "For Sell",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -29,7 +29,7 @@ const Agent = () => {
         
         {
           id: 1,
-          imageUrl: '/img/realtor-3.jpeg',
+          imageUrl: '/img/realtor-1.jpeg',
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",

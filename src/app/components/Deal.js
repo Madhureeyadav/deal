@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+
 import Image from 'next/image'
 import {AiOutlineVerticalLeft } from "react-icons/ai"
 import Link from "next/link"
@@ -7,19 +7,54 @@ import BookingForm from '../components/BookingForm'
 import Agent from '../components/Agent'
 import MainFocus from './MainFocus'
 import PlotingPlan from './PlotingPlan'
- import FontPage from './FontPage'
+
 import VideoPlayer1 from './VideoPlayer1'
 import Feedback from './Feedback'
 import FindPlot from './FindPlot'
 import SellProperty from './SellProperty'
+import React, { useEffect, useState } from 'react';
+import FontPage from './FontPage';
+import FontPage1 from './FontPage1';
 
 // import ParentComponent from './ParentComponent'
 import Counter from './Counter'
 const Deal = () => {
+  const [currentImg, setCurrentImg] = useState(0);
+  const interval = 3000;
+  let timer;
+
+  useEffect(() => {
+    // Add an interval to change slides automatically
+    timer = setInterval(nextSlide, interval);
+
+    // Cleanup on component unmount
+    return () => clearInterval(timer);
+  }, []);
+
+  function changeSlide(n) {
+    setCurrentImg(n);
+  }
+
+  function nextSlide() {
+    setCurrentImg((prevImg) => (prevImg + 1) % 2); // Assuming 2 components (FontPage and FontPage1)
+  }
   return (
     <main className="overflow-hidden">
-      
-      <FontPage/>
+      <div className="w-full h-102 flex items-center justify-center">
+        {currentImg === 0 && <FontPage />}
+        {currentImg === 1 && <FontPage1 />}
+      </div>
+      <div className="text-center ">
+        <span
+          className={`cursor-pointer h-4 w-4 m-1 bg-gray-400 rounded-full inline-block ${currentImg === 0 ? 'bg-gray-700' : ''}`}
+          onClick={() => changeSlide(0)}
+        ></span>
+        <span
+          className={`cursor-pointer h-4 w-4 m-1 bg-gray-400 rounded-full inline-block ${currentImg === 1 ? 'bg-gray-700' : ''}`}
+          onClick={() => changeSlide(1)}
+        ></span>
+      </div>
+     
    <FindPlot/>
    <SellProperty/>
 <PlotingPlan/>

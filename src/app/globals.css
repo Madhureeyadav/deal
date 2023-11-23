@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
 
+
+/* Your custom styles */
+
+.dot {
+    @apply cursor-pointer h-4 w-4 mx-1 my-1 text-center bg-gray-400 rounded-full inline-flex items-center justify-center;
+}
+
+.active,
+.dot:hover {
+    @apply bg-gray-700;
+}

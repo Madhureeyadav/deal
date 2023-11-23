@@ -17,9 +17,14 @@ export default function VideoPlayer1() {
       </button>
       <VideoPlayer
         isPlaying={isPlaying}
+<<<<<<< HEAD
         src="https://youtu.be/SntTQthl1UQ"
        
       />
+=======
+        src="https://youtu.be/SntTQthl1UQ?t=91"
+       />
+>>>>>>> c32e1e69434cff36396c564db1b092a10d35c94b
     </div>
   );
 }

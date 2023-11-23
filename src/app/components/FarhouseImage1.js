@@ -5,7 +5,11 @@ const FarhouseImage1 = () => {
     const farmhouseData = [
         {
           id: 1,
+<<<<<<< HEAD
           imageUrl: '/img/f2.jpg',
+=======
+          imageUrl: '/img/plot4.jpg',
+>>>>>>> c32e1e69434cff36396c564db1b092a10d35c94b
           title: "For Sell",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -16,7 +20,11 @@ const FarhouseImage1 = () => {
         },
         {
           id: 1,
+<<<<<<< HEAD
           imageUrl: '/img/f3.jpg',
+=======
+          imageUrl: '/img/feild4.jpg',
+>>>>>>> c32e1e69434cff36396c564db1b092a10d35c94b
           title: "For Sell",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -28,7 +36,11 @@ const FarhouseImage1 = () => {
         
         {
           id: 1,
+<<<<<<< HEAD
           imageUrl: '/img/f4.jpg',
+=======
+          imageUrl: '/img/feild2.jpeg',
+>>>>>>> c32e1e69434cff36396c564db1b092a10d35c94b
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -40,7 +52,11 @@ const FarhouseImage1 = () => {
         
         {
           id: 1,
+<<<<<<< HEAD
           imageUrl: '/img/f5.jpg',
+=======
+          imageUrl: '/img/feild3.jpeg',
+>>>>>>> c32e1e69434cff36396c564db1b092a10d35c94b
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -52,7 +68,11 @@ const FarhouseImage1 = () => {
         
         {
           id: 1,
+<<<<<<< HEAD
           imageUrl: '/img/f7.jpg',
+=======
+          imageUrl: '/img/feild5.jpeg',
+>>>>>>> c32e1e69434cff36396c564db1b092a10d35c94b
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
@@ -64,7 +84,7 @@ const FarhouseImage1 = () => {
         
         {
           id: 1,
-          imageUrl: '/img/f1.jpg',
+          imageUrl: '/img/feild.jpeg',
           title: "For Rent",
           description: "New Apartment Nice View",
           location: "Belmont Gardens, Chicago",
