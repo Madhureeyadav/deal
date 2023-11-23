@@ -12,6 +12,7 @@ const ShopOptions = () => {
             
              <button className="px-1 py-1  text-gray-700 rounded-lg hover:bg-gray-400 transition duration-300">
           <FontAwesomeIcon icon={faTh }
+         
            className="mr-2 w-10 h-7"/>
             </button>
             
