@@ -5,15 +5,15 @@ const PropertyCard = ({ property }) => {
   const { heading, description, totalArea, bedrooms, bathrooms, penthouse, lounge, imageUrl } = property;
 
   return (
-    <div className="p-2 flex rounded-lg shadow-lg duration-300 ease-in-out transform ">
-      <div className="w-1/2 relative">
-        <Image src={imageUrl} alt={heading} width={500} height={300} className="w-full h-full object-cover rounded-lg" />
+    <div className="p-2 flex rounded-lg shadow-lg  ">
+      <div className="w-1/2">
+        <Image src={imageUrl} alt={heading} width={500} height={300} className="w-full h-full object-cover rounded-lg hover:white" />
       </div>
       <div className="w-1/2 p-5 flex flex-col justify-between m-2 hover:bg-orange-100">
         <div className="">
-          <h2 className="text-xl font-bold mb-2">{heading}</h2>
+          <h2 className="text-4xl font-bold mb-2">{heading}</h2>
           <p className="text-gray-600 mb-4">{description}</p>
-          <div className="flex flex-col mb-2">
+          <div className="flex text-2xl flex-col mb-2">
             <span className="text-gray-700">Total Area ................................ {totalArea} sq. ft</span>
             <span className="text-gray-700">Bedrooms ................................ {bedrooms}</span>
             <span className="text-gray-700">Bathrooms ................................ {bathrooms}</span>

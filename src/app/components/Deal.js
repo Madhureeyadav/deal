@@ -39,7 +39,7 @@ const Deal = () => {
     setCurrentImg((prevImg) => (prevImg + 1) % 2); // Assuming 2 components (FontPage and FontPage1)
   }
   return (
-    <main className="overflow-hidden">
+    <main className="">
       <div className="w-full h-102 flex items-center justify-center">
         {currentImg === 0 && <FontPage />}
         {currentImg === 1 && <FontPage1 />}
@@ -60,7 +60,7 @@ const Deal = () => {
 <PlotingPlan/>
 
         <MainFocus/>
-        <VideoPlayer1/>
+        {/* <VideoPlayer1/> */}
         <Agent/>
         {/* <ParentComponent/> */}
         <Counter/>

@@ -20,11 +20,11 @@ const Contact1 = () => {
    
        <div className="">
       
-      <div className="flex padding-x  ">
-        <Image src="/img/f2.jpg" width={500} height={500} className="w-full h-64 opacity-75 object-cover" >
+      <div className="flex    ">
+        <Image src="/img/f2.jpg" width={500} height={500} className="w-full h-64 opacity-75 object-cover mt-20" >
           
         </Image>
-        <div className="text-2xl absolute  pl-36 pt-40">Contact Us </div>
+        <div className=" cont text-2xl   ">Contact Us </div>
        </div >
       <Map/>
       <div className="w-full border-2 h-96 flex   ">

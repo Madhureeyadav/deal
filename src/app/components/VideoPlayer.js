@@ -12,7 +12,7 @@ function VideoPlayer({ src, isPlaying }) {
     }
   }, [isPlaying]);
 
-  return <video ref={ref} src={src} loop playsInline className="pt-2 h-60  w-full  p-2 object-cover" />;
+  return <video ref={ref} src={"https://tunatheme.com/tf/html/quarter-preview/quarter"} className="pt-2 h-60  w-full  p-2 object-cover" />;
 }
 
 export default VideoPlayer;

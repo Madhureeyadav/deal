@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FarhouseImage1 = () => {
+const Landlist = () => {
  
     const farmhouseData = [
         {
@@ -113,5 +113,5 @@ const FarhouseImage1 = () => {
   
 }
 
-export default FarhouseImage1
+export default Landlist
 

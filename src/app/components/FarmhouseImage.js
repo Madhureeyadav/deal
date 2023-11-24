@@ -86,9 +86,10 @@ const FarmhouseImage =() => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {farmhouseData.map((property) => (
         <div key={property.id} className="bg-white rounded p-4 shadow-md">
-          <img
+          <Image
             src={property.imageUrl}
             alt={`Farmhouse ${property.id}`}
+            width={100} height={100}
             className="w-full h-40 object-cover mb-4"
           />
            <h1 className="text-2xl text-orange-600 font-bold mb-2">{property.title}</h1>

@@ -14,7 +14,7 @@ const FontPage1 = () => {
     <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
     <Link className="pr-10" href={"/FontPage" }><AiOutlineArrowLeft size={20}/></Link> 
     <div className="md:w-1/2">
-        <Image src="/img/build.png" alt="Modern house model" width={500} height={100} className="w-full hover:white transform  hover:-rotate-12 transition duration-600" />
+        <Image src="/img/build.png" alt="Modern house model" width={500} height={100} className="w-full " />
       </div>
       <div className="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
       

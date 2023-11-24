@@ -1,8 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Ga1 from '../components/Ga1'
 
-  
+const images = [
+  { src: '/img/logo.png' },
+  { src: '/img/logo.png' },
+  { src: '/img/logo.png' },
+  { src: '/img/logo.png' },
+  // Add more images as needed
+];
 
 const gallery = () => {
   return (
@@ -111,12 +117,17 @@ const gallery = () => {
   
    
   </div>
-</div> 
-<div className="flex ">
+
+
 
  
+
+<div className="container mx-auto my-8">
+      
+<Ga1   images={images}/>
 </div>
     </div>
+    </div> 
       
     
   )

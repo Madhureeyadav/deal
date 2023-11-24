@@ -55,7 +55,7 @@ const Navbar = () => (
       </li>
     </ul>
     <button className="py-3 px-5 text-mulish text-white border-blue-200 border rounded-full text-sm hover:bg-slate-500 transition duration-300">
-      <Link href={"/"} className="flex items-center">
+      <Link href={"/Nowcall"}  className="flex items-center">
         <AiFillMessage size={20} className="pr-1" />
         Now Call
       </Link>

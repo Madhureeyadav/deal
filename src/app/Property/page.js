@@ -91,17 +91,20 @@ const property = () => {
     },
    
   ];
+  const images1 = [
+    '/img/2bh.jpg','/img/2bh.jpg','/img/2bh.jpg','/img/2bh.jpg','/img/2bh.jpg','/img/2bh.jpg',
+  ];
   return (
     <div className="pt-20">
   <div className="flex xl:flex-row flex-col gap-5  max-w-[1440px] mx-auto">
      <div className="flex w-full">
   {/* First Column (Image) */}
-  <div className=" w-1/2 p-4">
+  <div className=" w-2/3 p-4">
     <Image src="/img/best.jpg" width={1000} height={500} className="w-full " />
   </div>
   
   {/* Second Column (Booking Form) */}
-  <div className=" w-1/2  p-4">
+  <div className=" w-1/3 h-full p-4">
     <BookingForm />
   </div>
 </div>
@@ -163,7 +166,10 @@ const property = () => {
 
 <div className="container mx-auto mt-8">
       <h1 className="  text-center font-bold mb-4">Image Gallery</h1>
-      <ImageProperty />
+      {/* <ImageProperty /> */}
+      
+      <ImageProperty images1={images1} />
+   
     </div>
 
 
