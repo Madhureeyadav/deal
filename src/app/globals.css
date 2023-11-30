@@ -4,25 +4,28 @@
 
 /* styles/globals.css */
 
+
 /* styles/globals.css or your global styles */
+
 @import 'slick-carousel/slick/slick.css';
-@import 'slick-carousel/slick/slick-theme.css';
 
 /* Your custom styles */
+
 .slick-prev,
 .slick-next {
-  font-size: 0px;
-  color: #000;
-  z-index: 1;
+    font-size: 0px;
+    color: #000;
+    z-index: 1;
 }
 
 .slick-prev {
-  left: 10px;
+    left: 10px;
 }
 
 .slick-next {
-  right: 10px;
+    right: 10px;
 }
+
 
 /* Your custom styles */
 
@@ -34,8 +37,9 @@
 .dot:hover {
     @apply bg-gray-700;
 }
-.cont{
-  position:absolute;
-  top:15rem;
-  left:40%;
+
+.cont {
+    position: absolute;
+    top: 15rem;
+    left: 40%;
 }
