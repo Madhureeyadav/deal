@@ -2,8 +2,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from "next/link"
-import {AiOutlineArrowRight ,AiOutlineArrowLeft} from "react-icons/ai"
-import FontPage  from '../components/FontPage'
+// import {AiOutlineArrowRight ,AiOutlineArrowLeft} from "react-icons/ai"
+// import BookingForm  from '../components/BookingForm'
 
 const FontPage1 = () => {
  
@@ -12,7 +12,7 @@ const FontPage1 = () => {
     <div className="bg-gray-100 py-20 ">
         
     <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
-    <Link className="pr-10" href={"/FontPage" }><AiOutlineArrowLeft size={20}/></Link> 
+    {/* <Link className="pr-10" href={"/FontPage" }><AiOutlineArrowLeft size={20}/></Link>  */}
     <div className="md:w-1/2">
         <Image src="/img/build.png" alt="Modern house model" width={500} height={100} className="w-full " />
       </div>
@@ -27,10 +27,11 @@ const FontPage1 = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
         </p>
         <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out ">
-          Make An Enquiry
+        <Link href="/BookingForm">  Make An Enquiry</Link>
         </button>
+   
       </div>
-      <li className="pl-5"><Link href={"/FontPage"}><AiOutlineArrowRight size={30}/></Link> </li>
+      {/* <li className="pl-5"><Link href={"/FontPage"}><AiOutlineArrowRight size={30}/></Link> </li> */}
     </div>
   </div>
   )

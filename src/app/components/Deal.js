@@ -41,7 +41,7 @@ const Deal = () => {
   }
   return (
     <main className="pt-20">
-      <div className="w-full h-102 flex items-center justify-center">
+      <div className="w-full h-102  bg-gray-100 flex items-center justify-around">
         {currentImg === 0 && <FontPage />}
         {currentImg === 1 && <FontPage1 />}
       </div>
