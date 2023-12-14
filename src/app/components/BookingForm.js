@@ -1,19 +1,83 @@
 'use client'
 // components/BookingForm.js
 import React, { useState } from 'react';
-import DropdownLocation from './DropdownLocation'; // Update the path as needed
+import DropdownLocation from './DropdownLocation';
+ // Update the path as needed
 
-const BookingForm = ({ onBook }) => {
+const BookingForm = () => {
   const [name, setName] = useState('');
   const [mobileNo, setMobileNo] = useState('');
   const [propertyName, setPropertyName] = useState('');
   const [location, setLocation] = useState('');
   const [date, setDate] = useState('');
+const [error,setError]=useState("");
+const [success,setSuccess]=useState(false);
 
-  const handleSubmit = (e) => {
+
+  const bookingHandle =async (e) => {
     e.preventDefault();
-    onBook({ name, mobileNo, propertyName, location, date });
-  };
+    
+console.log("name",name);
+console.log("mobileNo.",mobileNo);
+console.log("propertyName",propertyName);
+console.log("location",location);
+console.log("date",date);
+
+    
+      // const res = await fetch('/api/booking', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({ name, mobileNo, propertyName, location, date }),
+      // });
+
+      // const { msg, success } = await res.json();
+      // setError(msg);
+      // setSuccess(success);
+
+      // if (success) {
+      //   // Reset form fields on success
+      //   setName('');
+      //   setMobileNo('');
+      //   setPropertyName('');
+      //   setLocation('');
+      //   setDate('');
+      // }
+
+      const res = await fetch('/api/booking', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, mobileNo, propertyName, location, date }),
+      });
+      
+      const responseText = await res.text();
+      console.log('Raw Server Response:', responseText);
+      
+      try {
+        const { msg, success } = JSON.parse(responseText);
+        console.log('Parsed Server Response:', { msg, success });
+        setError(msg);
+        setSuccess(success);
+      
+        if (success) {
+          // Reset form fields on success
+          setName('');
+          setMobileNo('');
+          setPropertyName('');
+          setLocation('');
+          setDate('');
+        }
+      } catch (error) {
+        console.error('Error parsing server response:', error);
+        setError('Server error, please try again!');
+        setSuccess(false);
+      }
+    }      
+
+
 
   const locationOptions = [
     { value: 'option1', label: 'Option 1' },
@@ -22,7 +86,7 @@ const BookingForm = ({ onBook }) => {
   ];
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-sm mx-auto p-6 bg-white shadow-md rounded-lg">
+    <form onSubmit={bookingHandle } className="max-w-sm mx-auto p-6 bg-white shadow-md rounded-lg">
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
           Name:
@@ -43,8 +107,8 @@ const BookingForm = ({ onBook }) => {
           className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
           type="number"
           id="mobileNo"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={mobileNo}
+          onChange={(e) => setMobileNo(e.target.value)}
         />
       </div>
       <div className="mb-4">
@@ -55,8 +119,8 @@ const BookingForm = ({ onBook }) => {
           className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
           type="text"
           id="propertyName"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={propertyName}
+          onChange={(e) => setPropertyName(e.target.value)}
         />
       </div>
       {/* Add the rest of the input fields */}
@@ -86,6 +150,7 @@ const BookingForm = ({ onBook }) => {
       <button
         className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-700 transition duration-300"
         type="submit"
+      
       >
         Book Now
       </button>

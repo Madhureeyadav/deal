@@ -8,7 +8,7 @@ export default function VideoPlayer1() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="flex items-center justify-center  bg-white rounded m-2 shadow-md">
+    <div className="flex items-center justify-center h-56 bg-white rounded m-4 shadow-md ">
       <button
         onClick={() => setIsPlaying(!isPlaying)}
         className="bg-slate-500 text-white p-2 rounded absolute"
@@ -17,7 +17,7 @@ export default function VideoPlayer1() {
       </button>
       <VideoPlayer
         isPlaying={isPlaying}
-        src="https://youtu.be/SntTQthl1UQ"/>
+        src="https://d2of6bhnpl91ni.cloudfront.net/cms/new-real-estate-listing-video-template-0f2c2d0531.mp4"/>
        
       </div>
   );

@@ -17,7 +17,32 @@ const Apartment = () => {
   return (
     <div className="pt-20 ">
      
+     <div className="bg-slate-100 w-full  shodow-lg  ">
      <Image src="/img/f1.jpg" alt="Farmhouse image" width={500} height={100}  className="w-full h-52 object-cover"/>
+      
+     
+<nav class="flex p-2" aria-label="Breadcrumb">
+  <ol class="flex items-center font-bold text-md space-x-2 pl-3">
+    <li>
+      <Link href="/" class="text-stone-600 hover:text-stone-900  hover:underline">Home</Link>
+    </li>
+    <li>/</li>
+    <li>
+    <Link href="/Property" class="text-stone-600  hover:text-stone-900 hover:underline"> Property</Link>
+    </li>
+    <li>/</li>
+    <li>
+      <Link href="/Apartment" class="text-stone-600 hover:text-stone-900 hover:underline"> Apartment</Link>
+    </li>
+    <li>/</li>
+    <li>
+      <Link href="/Farmhouse" class="text-stone-600 hover:text-stone-900 hover:underline">Farmhouse</Link>
+    </li>
+
+  </ol>
+</nav>
+
+</div>
       
       
       

@@ -7,7 +7,7 @@ import BookingForm from '../components/BookingForm'
 import Agent from '../components/Agent'
 import MainFocus from './MainFocus'
 import PlotingPlan from './PlotingPlan'
-
+import Imagefont from './Imagefont';
 import VideoPlayer1 from './VideoPlayer1'
 import Feedback from './Feedback'
 import FindPlot from './FindPlot'
@@ -15,6 +15,7 @@ import SellProperty from './SellProperty'
 import React, { useEffect, useState } from 'react';
 import FontPage from './FontPage';
 import FontPage1 from './FontPage1';
+import Icon from './Icon';
 
 // import ParentComponent from './ParentComponent'
 import Counter from './Counter'
@@ -39,7 +40,7 @@ const Deal = () => {
     setCurrentImg((prevImg) => (prevImg + 1) % 2); // Assuming 2 components (FontPage and FontPage1)
   }
   return (
-    <main className="">
+    <main className="pt-20">
       <div className="w-full h-102 flex items-center justify-center">
         {currentImg === 0 && <FontPage />}
         {currentImg === 1 && <FontPage1 />}
@@ -55,14 +56,16 @@ const Deal = () => {
         ></span>
       </div>
      
-   <FindPlot/>
+   {/* <FindPlot/> */}
    <SellProperty/>
-<PlotingPlan/>
-
+{/* <PlotingPlan/> */}
+<Icon/>
         <MainFocus/>
-        {/* <VideoPlayer1/> */}
-        <Agent/>
+       
+        <VideoPlayer1/>
+        {/* <Agent/> */}
         {/* <ParentComponent/> */}
+        <Imagefont/>
         <Counter/>
       <Feedback/>
     </main>

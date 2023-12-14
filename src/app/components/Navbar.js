@@ -1,6 +1,6 @@
-import {AiFillMessage } from "react-icons/ai"
-import Link from "next/link"
-import Dropdown from "./Dropdown"
+import {AiFillMessage } from "react-icons/ai";
+import Link from "next/link";
+import Dropdown from './Dropdown'
 import Deal from "./Deal"
 import React from 'react'
 import Image from "next/image"
@@ -30,12 +30,12 @@ const Navbar = () => (
  
 //    
 
-<nav className="bg-blue-950 fixed w-full">
+<nav className="bg-blue-950 fixed w-full h-auto">
   <div className="container mx-auto px-4 md:px-8 flex items-center justify-between py-4">
     <div className="flex items-center">
       <Image src="/img/logo.png" width={200} height={100} className="cursor-pointer" />
     </div>
-    <ul className="hidden md:flex space-x-4">
+    <ul className="hidden md:flex space-x-8">
       <li className="text-white font-mulish hover:text-blue-200 transition duration-300 relative group">
         <Link href="/">Home</Link>
         <div className="absolute bottom-0 w-full h-1 bg-blue-200 hidden group-hover:block transition duration-300"></div>

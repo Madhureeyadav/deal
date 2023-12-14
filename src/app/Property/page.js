@@ -5,7 +5,11 @@ import ImageApartment from '../components/ImageApartment'
 import ImageProperty from '../components/ImageProperty'
 import BookingForm from '../components/BookingForm'
 import PropertyType from '../components/PropertyType'
-import Agent from '../components/Agent'
+import Category from '../components/Category'
+import PriceRange from '../components/PriceRange'
+// import Agent from '../components/Agent'
+import Link from 'next/link';
+
 
 const apartments = [
   { id: 1, name: 'Apartment A', description: 'Beautiful apartment with a view', price: 1000 , rating: 4 },
@@ -96,6 +100,30 @@ const property = () => {
   ];
   return (
     <div className="pt-20">
+<div className="bg-slate-100 m-2 shodow-lg h-28  pt-16">
+<nav class="flex" aria-label="Breadcrumb">
+  <ol class="flex items-center font-bold text-md space-x-2 pl-3">
+    <li>
+      <Link href="/" class="text-stone-600 hover:text-stone-900  hover:underline">Home</Link>
+    </li>
+    <li>/</li>
+    <li>
+    <Link href="/Property" class="text-stone-600  hover:text-stone-900 hover:underline"> Property</Link>
+    </li>
+    <li>/</li>
+    <li>
+      <Link href="/Apartment" class="text-stone-600 hover:text-stone-900 hover:underline"> Apartment</Link>
+    </li>
+    <li>/</li>
+    <li>
+      <Link href="/Farmhouse" class="text-stone-600 hover:text-stone-900 hover:underline">Farmhouse</Link>
+    </li>
+
+  </ol>
+</nav>
+
+</div>
+
   <div className="flex xl:flex-row flex-col gap-5  max-w-[1440px] mx-auto">
      <div className="flex w-full">
   {/* First Column (Image) */}
@@ -153,27 +181,27 @@ const property = () => {
        
         <div className="flex flex-col text-left ">
       <h1 className="text-xl font-bold p-4 pl-7">Categories </h1> 
-      <PropertyType />
+      <Category />
     </div> 
         
         <div className="flex flex-col text-left ">
       <h1 className="text-xl  font-bold p-2 pl-7"> Prices </h1> 
-      <PropertyType />
+      <PriceRange />
     </div> 
 
     </div> 
         </div>
 
-<div className="container mx-auto mt-8">
-      <h1 className="  text-center font-bold mb-4">Image Gallery</h1>
-      {/* <ImageProperty /> */}
+<div className="container mx-auto  shadow-lg mt-8 p-4">
+      <h1 className="  text-center text-4xl  font-bold mb-6">Image Gallery</h1>
+      <ImageProperty />
       
-      <ImageProperty images1={images1} />
+      {/* <ImageProperty images1={images1} /> */}
    
     </div>
 
 
-<Agent/>
+{/* <Agent/> */}
       
 </div>
   )

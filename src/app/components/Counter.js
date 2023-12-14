@@ -27,21 +27,28 @@ useEffect(() => {
         
   return (
     <div className="p-2">
-      <div className="flex justify-around items-center h-48 rounded-xl bg-slate-100 ">
+      <div className="  items-center text-center h-64 rounded-xl bg-slate-100 ">
+       <p className="text-3xl font-bold pt-4 ">Achievement's</p>
+
+     <p  className="text-xl mt-2 ">Proven Success - Number don't lie</p>
+      <div className="flex justify-around items-center ">
+       
       <div className=" p-8 rounded-lg hover:text-orange-500">
       
-        <p className="font-bold text-4xl hover:text-orange-500"> {counter1}k+</p>
-        <h1 className="text-2xl font-bold hover:text-orange-500">Column 1</h1>
+        <p className="font-bold text-4xl hover:text-orange-500"> ${counter1}M+</p>
+        <h1 className="text-2xl font-bold hover:text-orange-500">Properties Sold</h1>
       </div>
       <div className=" p-8 rounded-lg">
-      <p className="font-bold text-4xl hover:text-orange-500"> {counter1}k+</p>
-        <h1 className="text-xl font-bold hover:text-orange-500">Column 2</h1>  
+      <p className="font-bold text-4xl hover:text-orange-500"> {counter1}%</p>
+        <h1 className="text-2xl font-bold hover:text-orange-500">ToSoldRatio</h1>  
       </div>
       <div className=" p-8 rounded-lg">
-      <p className="font-bold text-4xl hover:text-orange-500"> {counter1}k+</p>
-        <h1 className="text-2l font-bold hover:text-orange-500">Column 3</h1>
+      <p className="font-bold text-4xl hover:text-orange-500"> {counter1}%</p>
+        <h1 className="text-2xl font-bold hover:text-orange-500">HappyClient</h1>
       </div>
     
+    </div>
+     
     </div>
     
     </div>

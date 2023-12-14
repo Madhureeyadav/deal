@@ -3,13 +3,13 @@ import React, { useState } from "react";
 
 
 
-const PropertyType=()=> {
+const PriceRange=()=> {
     const items = [
-        { id: 1, label: "House" },
-        { id: 2, label: "Single family" },
-        { id: 3, label: "Apartment" },
-        { id: 4, label: "office villa" },
-        { id: 5, label: "Luxart Home" },
+        { id: 1, label: "Lower Budget   -   $5,000-$10,000" },
+        { id: 2, label: "Medium1 Budget   -   $10,000-$30,000"  },
+        { id: 3, label: "Medium1 Budget   -   $10,000-$30,000"  },
+        { id: 4, label: "Medium1 Budget   -   $10,000-$30,000" },
+        { id: 5, label: "High Budget   -   $40,000up"  },
         // Add more items as needed
       ];
     const [checkedItems, setCheckedItems] = useState({});
@@ -40,4 +40,4 @@ const PropertyType=()=> {
 
 
 
-export default PropertyType;
+export default PriceRange;

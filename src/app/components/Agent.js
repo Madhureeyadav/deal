@@ -1,42 +1,37 @@
 import React from 'react'
-
+import { PiPhoneCallLight } from "react-icons/pi";
+import { IoLocation } from "react-icons/io5";
 const Agent = () => {
     const farmhouseData = [
        
         {
           id: 1,
           imageUrl: '/img/realtor-1.jpeg',
-          title: "For Sell",
-          description: "New Apartment Nice View",
-          location: "Belmont Gardens, Chicago",
-          bedrooms: 3,
-          bathrooms: 2,
-          squareFeet: 3450,
-          price: "$34,900/Month",
+          title: "Sell manager",
+          description: " Ajay Rana",
+          location: "Noida ",
+          
+          phone: "873657827",
         },
         
         {
           id: 1,
           imageUrl: '/img/realtor-3.jpeg',
-          title: "For Rent",
-          description: "New Apartment Nice View",
-          location: "Belmont Gardens, Chicago",
-          bedrooms: 3,
-          bathrooms: 2,
-          squareFeet: 3450,
-          price: "$34,900/Month",
+          title: "Sellman  ",
+          description: "Ritesh gupta",
+          location: "Pari Chock",
+         
+          phone: "1234567890",
         },
         
         {
           id: 1,
           imageUrl: '/img/realtor-1.jpeg',
-          title: "For Rent",
-          description: "New Apartment Nice View",
-          location: "Belmont Gardens, Chicago",
-          bedrooms: 3,
-          bathrooms: 2,
-          squareFeet: 3450,
-          price: "$34,900/Month",
+          title: " Broker",
+          description: "kamal gupta",
+          location: "sectoe 62 Noida",
+          
+          phone: "672388723",
         },
        
         
@@ -55,11 +50,11 @@ const Agent = () => {
             alt={`Farmhouse ${property.id}`}
             className="w-full h-40 object-cover mb-4"
           />
-           <h1 className="text-2xl text-orange-600 font-bold mb-2">{property.title}</h1>
-      <p className="text-gray-600">{property.description}</p>
-      <p className="text-gray-800">{property.location}</p>
-      <p>{property.bedrooms} Bedrooms {property.bathrooms} Bathrooms {property.squareFeet} square Ft</p>
-      <p className="text-lg font-bold text-orange-400 p-2 m-2 border-t">{property.price}</p>
+           <h1 className="text-2xl text-orange-600 font-bold m-2">{property.title}</h1>
+      <p className="text-gray-600 m-2">{property.description}</p>
+      <p className="text-gray-800"> <IoLocation  className="inline m-2"/>{property.location}</p>
+      
+      <p className="text-lg font-bold text-orange-400  border-t  "><PiPhoneCallLight className="inline m-2" />{property.phone}</p>
         </div>
       ))}
     </div>
