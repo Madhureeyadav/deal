@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image'
-
+import Link from 'next/link'
 
 const FarmhouseImage =() => {
     const farmhouseData = [
@@ -83,10 +83,11 @@ const FarmhouseImage =() => {
     //   
     <div className="container mx-auto my-8">
     <h1 className="text-3xl font-semibold mb-4">Farmhouse Properties</h1>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <Link href="/PropertyDetail1" 
+   className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {farmhouseData.map((property) => (
         <div key={property.id} className="bg-white rounded p-4 shadow-md">
-          <Image
+        <Image
             src={property.imageUrl}
             alt={`Farmhouse ${property.id}`}
             width={100} height={100}
@@ -99,7 +100,7 @@ const FarmhouseImage =() => {
       <p className="text-lg font-bold text-orange-400 p-2 m-2 border-t">{property.price}</p>
         </div>
       ))}
-    </div>
+    </Link>
   </div>
     );
   };

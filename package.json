@@ -1,45 +1,6 @@
 {
-<<<<<<< HEAD
-  "name": "deal",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@heroicons/react": "^2.0.18",
-    "@nextui-org/react": "^2.1.13",
-    "axios": "^1.6.2",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "env": "^0.0.2",
-    "express": "^4.18.2",
-    "heroicons": "^2.0.18",
-    "mongoose": "^8.0.2",
-    "next": "^14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-hot-toast": "^2.4.1",
-    "react-icons": "^4.11.0",
-    "react-router-dom": "^6.20.1",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.5"
-  }
-}
-=======
+
+
     "name": "deal",
     "version": "0.1.0",
     "private": true,
@@ -79,4 +40,4 @@
     "author": "",
     "license": "ISC"
 }
->>>>>>> 80dfa47240eed94614175d8d39f1a5be26b650ca
+
