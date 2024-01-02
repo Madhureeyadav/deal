@@ -2,27 +2,50 @@
 'use client'
 import Image from'next/image'
 import React, { useState } from 'react';
+import { MdMarkEmailUnread } from "react-icons/md";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    
     categories: '',
     price: '',
     propertyType: '',
-    number: '',
+    number: ''
   });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const [error,setError]=useState("");
+  const[success,setSuccess]=useState(false);
+  
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check if the form contains specific numbers and email
-    
+   const res=await fetch("api/contactNow",{
+    method:'POST',
+    headers:{
+      "Content-type":"application/json",
+    },
+    body:JSON.stringify({
+   formData
+    })
+   })
+    const {msg,success}=await res.json();
+    setError(msg);
+   setSuccess(success);
+ if(success){
+      // setName("");
+      // setEmail("");
+      // setCategories(" ");
+      // setPrice('');
+      // setPropertyTYpe('');
+      // setNumber('');
+      setFormData('')
+ }
+
   };
 
   return (
@@ -122,14 +145,15 @@ const Contact = () => {
       <div className="flex m-10 p-6 font-bold text-lg max-w-2xl mx-auto justify-around ">
         <div className=" flex   flex-col border-2 m-5 md:p-10 lg:p-20 bg-white rounded text-center shadow-md ">
       <div className="flex items-center justify-center p-2">
-  <Image src="/img/icon2.png" alt="Icon Image" width={100} height={100} />
+  {/* <Image src="/img/icon2.png" alt="Icon Image" width={100} height={100} /> */}
+  <MdMarkEmailUnread size={30} />
 </div>
 
       <h3 className="animated fadeIn">Email Address</h3>
-      <p>
-        <a href="mailto:info@webmail.com">info@webmail.com</a> <br />
-        <a href="mailto:jobs@webexample.com">jobs@webexample.com</a>
-      </p>
+      <div>
+        <p>info@mail.com</p> 
+        <p>support@wmail.com</p>
+      </div>
       </div>
       <div className=" flex   flex-col  border-2 m-5 md:p-10 lg:p-20 bg-white rounded text-center shadow-md ">
       <div className="flex items-center p-2 justify-center">
@@ -137,10 +161,10 @@ const Contact = () => {
 </div>
 
       <h3 className="animated fadeIn">Number</h3>
-      <p>
-        <a href="mailto:info@webmail.com">info@webmail.com</a> <br />
-        <a href="mailto:jobs@webexample.com">jobs@webexample.com</a>
-      </p>
+      <div>
+        <p>9187654321</p> 
+        <p >9123456789</p>
+      </div>
     </div>
     </div>
     </div>

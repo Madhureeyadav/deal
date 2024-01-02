@@ -24,26 +24,7 @@ console.log("location",location);
 console.log("date",date);
 
     
-      // const res = await fetch('/api/booking', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify({ name, mobileNo, propertyName, location, date }),
-      // });
-
-      // const { msg, success } = await res.json();
-      // setError(msg);
-      // setSuccess(success);
-
-      // if (success) {
-      //   // Reset form fields on success
-      //   setName('');
-      //   setMobileNo('');
-      //   setPropertyName('');
-      //   setLocation('');
-      //   setDate('');
-      // }
+     
 
       const res = await fetch('/api/booking', {
         method: 'POST',

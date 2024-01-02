@@ -3,7 +3,7 @@ import Link from "next/link"
 import { IoCall } from "react-icons/io5";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
-import Image from "next/image"
+import Map from '../components/Map';
 
 const Contact = () => {
 
@@ -60,12 +60,11 @@ const Contact = () => {
       <div className="font-bold mx-auto  p-3">
         <h1 className="text-2xl mb-2" >FAQ</h1>
      
-        <div className="mb-2">Gallery</div>
-    <div className="mb-2">Property Detail</div>
-    <div className="mb-2">Apartment</div>
-    <div className="mb-2">FarmHouse</div>
-    <div className="mb-2">LocationMap</div>
-    <div className="mb-2">Contact us</div>
+       <Link href='/Gallery'><div className="mb-2">Gallery</div></Link> 
+       <Link href='/PropertyDetail1'><div className="mb-2">Property Detail</div></Link> 
+       <Link href='/Property/Apartment'><div className="mb-2">Apartment</div></Link> 
+       <Link href='/Property/Farmhouse'><div className="mb-2">FarmHouse</div></Link> 
+       <Link href='/Contact1'><div className="mb-2">Contact us</div></Link> 
         </div>
        
       </div>

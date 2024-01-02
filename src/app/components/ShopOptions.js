@@ -38,9 +38,7 @@ const ShopOptions = ({ onViewChange }) => {
           <div className="text-center md:mr-4">
             <select className="bg-gray-100 border border-gray-300 rounded-full p-2 text-gray-800 focus:outline-none focus:border-blue-500 transition duration-300">
               <option className="text-gray-500">Default sorting</option>
-              <option className="text-gray-500">Sort by popularity</option>
-              <option className="text-gray-500">Sort by new arrivals</option>
-              <option className="text-gray-500">Sort by price: low to high</option>
+               <option className="text-gray-500">Sort by price: low to high</option>
               <option className="text-gray-500">Sort by price: high to low</option>
             </select>
 
@@ -49,12 +47,6 @@ const ShopOptions = ({ onViewChange }) => {
               <ul className="list">
                 <li data-value="Default sorting" className="option selected">
                   Default sorting
-                </li>
-                <li data-value="Sort by popularity" className="option">
-                  Sort by popularity
-                </li>
-                <li data-value="Sort by new arrivals" className="option">
-                  Sort by new arrivals
                 </li>
                 <li data-value="Sort by price: low to high" className="option">
                   Sort by price: low to high

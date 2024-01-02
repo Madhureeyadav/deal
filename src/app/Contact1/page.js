@@ -41,6 +41,8 @@ const res=await fetch("api/contact",{
     }),
 });
 
+
+
 const {msg,success}=await res.json();
 setError(msg);
 setSuccess(success);
@@ -102,7 +104,7 @@ if(success){
           type="text" name="email" id="email"
                            placeholder="Enter your email"
                         value={email}
-             onChange={(e) =>setEmail(e.target.value)}
+                         onChange={(e) =>setEmail(e.target.value)}
                            required
                            autoComplete="off"/>
           </div>

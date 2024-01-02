@@ -32,11 +32,11 @@ const Apartment = () => {
     </li>
     <li>/</li>
     <li>
-      <Link href="/Apartment" class="text-stone-600 hover:text-stone-900 hover:underline"> Apartment</Link>
+      <Link href="/Property/Apartment" class="text-stone-600 hover:text-stone-900 hover:underline"> Apartment</Link>
     </li>
     <li>/</li>
     <li>
-      <Link href="/Farmhouse" class="text-stone-600 hover:text-stone-900 hover:underline">Farmhouse</Link>
+      <Link href="/Property/Farmhouse" class="text-stone-600 hover:text-stone-900 hover:underline">Farmhouse</Link>
     </li>
 
   </ol>

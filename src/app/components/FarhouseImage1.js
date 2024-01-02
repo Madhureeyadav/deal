@@ -42,7 +42,7 @@ const FarhouseImage1 = () => {
           bedrooms: 3,
           bathrooms: 2,
           squareFeet: 3450,
-          price: "$34,900/Month",
+          price: "$565,900/Month",
         },
         
         {
@@ -78,7 +78,7 @@ const FarhouseImage1 = () => {
           bedrooms: 3,
           bathrooms: 2,
           squareFeet: 3450,
-          price: "$34,900/Month",
+          price: "$66,900/Month",
         },
     ];
     return (
@@ -114,4 +114,6 @@ const FarhouseImage1 = () => {
 }
 
 export default FarhouseImage1
+
+
 
